@@ -17,7 +17,7 @@ client.connect(err => {
     //     console.log(result[4]);
     // })
 
-    client.db('sample_training').collection('companies').find({name: 'Cyworld'}).toArray().then(result => {
+    client.db('sample_training').collection('companies').find({'name': 'Facebook'}).toArray().then(result => {
         console.log(result);
     })
  
